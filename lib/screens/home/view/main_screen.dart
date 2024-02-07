@@ -163,7 +163,29 @@ class MainScreen extends StatelessWidget {
               )
             ],
           ),
-        )
+        ),
+        const SizedBox(height: 20),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              "Transactions",
+              style: TextStyle(
+                  fontSize: 16,
+                  color: Theme.of(context).colorScheme.onBackground,
+                  fontWeight: FontWeight.bold),
+            ),
+            GestureDetector(
+              onTap: () {},
+              child: Text(
+                "View all",
+                style: TextStyle(
+                    fontSize: 12, color: Theme.of(context).colorScheme.outline),
+              ),
+            )
+          ],
+        ),
+        const SizedBox(height: 20),
       ]),
     ));
   }
