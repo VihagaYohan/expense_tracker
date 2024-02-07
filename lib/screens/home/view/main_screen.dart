@@ -65,6 +65,12 @@ class MainScreen extends StatelessWidget {
           height: MediaQuery.of(context).size.width / 2,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(25),
+              boxShadow: [
+                BoxShadow(
+                    blurRadius: 4,
+                    color: Colors.grey.shade400,
+                    offset: const Offset(5, 5))
+              ],
               gradient: LinearGradient(colors: [
                 Theme.of(context).colorScheme.secondary,
                 Theme.of(context).colorScheme.tertiary,
